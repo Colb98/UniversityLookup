@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/uni_image"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/gradient_white_transparent"
+            android:layout_alignBottom="@id/uni_image"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/uni_info_container"
+            android:layout_marginStart="5dp"
+            android:background="@android:color/white"
+            android:layout_below="@id/uni_image">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="University Name"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="5dp"
+                android:id="@+id/uni_name"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="University Address"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/uni_addr"/>
+        </LinearLayout>
+    </RelativeLayout>
